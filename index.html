@@ -11,7 +11,8 @@
 <meta property="og:description" content="Een holding uit Groningen.">
 <meta property="og:url" content="https://nova-momentum.nl/">
 <meta property="og:locale" content="nl_NL">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f2e3d'/%3E%3Cpath d='M9 22V10l14 12V10' fill='none' stroke='%23e8c37a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
   :root {
     --bg: #fbfaf8;
@@ -57,12 +58,12 @@
 
   header { margin-bottom: 3rem; }
 
-  .mark {
+  .logo {
     display: block;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--accent);
+    width: 15rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
   }
 
   h1 {
@@ -168,6 +169,7 @@
   @media (min-width: 40rem) {
     body { padding: 5rem 2rem 3rem; }
     h1 { font-size: 2.25rem; }
+    .logo { width: 18rem; }
     .lead { font-size: 1.25rem; }
     .activities { gap: 1.25rem; }
   }
@@ -177,11 +179,11 @@
 <main>
 
   <header>
-    <svg class="mark" viewBox="0 0 32 32" role="img" aria-label="Nova Momentum">
-      <path d="M6 24V8l20 16V8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
     <h1>
-      Nova Momentum
+      <picture>
+        <source srcset="logo-horizontal-dark.png" media="(prefers-color-scheme: dark)">
+        <img class="logo" src="logo-horizontal-light.png" width="720" height="216" alt="Nova Momentum">
+      </picture>
       <span class="suffix">Holding B.V.</span>
     </h1>
     <p class="lead">
